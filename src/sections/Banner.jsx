@@ -4,16 +4,20 @@ import image from  "../assets/assetImage.jpg"
 
 const Banner = () => {
   return (
-    <Box
+    <Box 
       position="relative"
       bgImage="url(http://wallpaperstock.net/purple-planet-stars-landscape_wallpapers_40141_1920x1080.jpg)"
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
       p={6}>
-        {/* <Box>
-            <Image src={"https://cryptologos.cc/logos/aave-aave-logo.png"} w="3%"></Image>
-        </Box> */}
+        <Flex justify="space-between" align={"center"}>
+            <Text color={"white"} fontSize="2xl" letterSpacing={"2px"}>अंतरिक्ष</Text>
+            <Box w="50px">
+                <Image src="https://cryptologos.cc/logos/aave-aave-logo.png" w="100%"></Image>
+            </Box>
+            
+        </Flex>
 
       <Box margin="0 auto" maxW="64rem" py={{ base: '1rem', lg: '8rem' }}>
         <Heading as="h2" fontSize={{ base: '2.25rem', lg: '3rem' }} mb="4" color="#fff">
@@ -33,7 +37,7 @@ const Banner = () => {
             marginTop={"20px"}
           >
             <Text  mb="1.5rem" fontSize={"1xl"} color="#fff">
-              Find places to stay and things to do zdlknvslv Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugiat facere expedita?
+              New Technology , New Builts , New Structure <Text as={"b"}>Waiting For You To Get </Text>
             </Text>
             <Button
               as={Link}
