@@ -31,7 +31,6 @@ const BlogTags = (props) => {
 };
 
 const ListCard = ({ data }) => {
-  console.log(data);
   return (
     <Container w="100%" p="12" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px">
       <Wrap spacing="30px" marginTop="5">
@@ -53,7 +52,6 @@ const ListCard = ({ data }) => {
                 />
               </Link>
             </Box>
-            {/* <BlogTags tags={["Engineering", "SpaceX"]} marginTop="3" /> */}
             <Box marginTop="20px" >
                 <Box textAlign={"center"}>
                 <Text as={"mark"} fontSize="4xl" textAlign={"center"}>

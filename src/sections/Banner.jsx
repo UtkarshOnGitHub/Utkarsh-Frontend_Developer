@@ -38,7 +38,7 @@ const Banner = () => {
             marginTop={"20px"}
           >
             <Text  mb="1.5rem" fontSize={"1xl"} color="#fff">
-              New Technology , New Builts , New Structure <Text as={"b"}>Waiting For You To Get </Text>
+            The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.
             </Text>
             <Button
               as={Link}
