@@ -10,6 +10,7 @@ export const Footer = () => (
     padding={"10px"}
     marginTop="40px"
     data-testid="footer-text"
+    borderTop={"2px solid grey"}
   >
     <Stack
       spacing={{
@@ -19,7 +20,7 @@ export const Footer = () => (
     >
       <Stack justify="space-between" direction="row" align="center">
         {/* <Logo /> */}
-        <Box w="100px">
+        <Box w="60px">
             <Image src="https://cryptologos.cc/logos/aave-aave-logo.png" w="100%"></Image>
         </Box>
         
