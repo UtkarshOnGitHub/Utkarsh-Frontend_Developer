@@ -14,7 +14,7 @@ const Form = ({handlevaluesChange}) => {
 
   return (
     <>
-      <Box marginTop={"30px"} p="30px">
+      <Box marginTop={"30px"} p="30px" data-testid="form-section">
         <Heading as="em" color={"grey"}>Lets Explore! Filter According To Your Choice</Heading>
         <Flex gap={"30px"} marginTop={"20px"}>
           <Select placeholder="Filter By Type" onChange={(e)=>handlevalues("type",e.target.value)}>

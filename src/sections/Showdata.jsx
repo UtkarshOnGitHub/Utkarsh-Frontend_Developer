@@ -28,7 +28,7 @@ const ShowData = ({ asset }) => {
         </Text>
       </Heading>
       </Box>
-      <SimpleGrid columns={[1, 2, 3]} gap="40px" p={"20px"}>
+      <SimpleGrid columns={[1, 2, 3]} gap="40px" p={"20px"} data-testid="showData-section">
         {asset?.map((e) => {
           return <ListCard key={e.id} data={e} />;
         })}

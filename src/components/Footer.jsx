@@ -9,6 +9,7 @@ export const Footer = () => (
     role="contentinfo"
     padding={"10px"}
     marginTop="40px"
+    data-testid="footer-text"
   >
     <Stack
       spacing={{

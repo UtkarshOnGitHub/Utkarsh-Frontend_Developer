@@ -16,9 +16,10 @@ const Pagination = ({ callHandleValue,page}) => {
         display={"flex"}
         justifyContent="center"
         gap="20px"
-        marginTop={"20px"}
+        data-testid="pagi-btn"
+        marginTop={"20px" }
       >
-        <Button isDisabled={page===1} onClick={()=>{handlePageChange(-1)}}>Prev</Button>
+        <Button isDisabled={page===1}  onClick={()=>{handlePageChange(-1)}}>Prev</Button>
         <Button>{page}</Button>
         <Button isDisabled={page===3} onClick={()=>{handlePageChange(1)}}>Next</Button>
       </Container>

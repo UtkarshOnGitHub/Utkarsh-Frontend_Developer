@@ -11,7 +11,7 @@ const Banner = () => {
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
-      p={6}>
+      p={6} data-testid="banner-section">
         <Flex justify="space-between" align={"center"}>
             <Text color={"white"} fontSize="2xl" letterSpacing={"2px"}>अंतरिक्ष</Text>
             <Box w="50px">
