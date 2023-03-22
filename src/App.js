@@ -39,6 +39,16 @@ function App() {
     } 
 
     const handlevaluesChange =(type,value)=>{
+      if(type=="sorting"){
+          let sorted = data?.docs?.sort((a,b)=>{
+            if(value=="asc"){
+              return a.water_landings - b.water_landings
+            }else if(value=="desc"){
+              return b.water_landings - a.water_landings
+            }
+          })
+          setAsset(sorted)
+      }else{
         let filtered = allData?.docs?.filter((e)=>{
           if(type=="type"){
             return e.type==value
@@ -48,9 +58,11 @@ function App() {
           }
         })
         setAsset(filtered)
+      }
+
     }
 
-
+    console.log(data)
   
   return (
       <>

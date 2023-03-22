@@ -27,10 +27,9 @@ const Form = ({handlevaluesChange}) => {
             <option value="retired">Retierd</option>
             <option value="destroyed">Destroyed</option>
           </Select>
-          <Select placeholder="Sort By Water Landing">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+          <Select placeholder="Sort By Water Landing"  onChange={(e)=>handlevalues("sorting",e.target.value)}>
+            <option value="asc">Low To High</option>
+            <option value="desc">High To Low</option>
           </Select>
         </Flex>
       </Box>

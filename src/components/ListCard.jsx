@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Heading,
@@ -15,6 +15,7 @@ import {
   Container,
   VStack,
 } from "@chakra-ui/react";
+import ModalForList from "./Modal";
 
 const BlogTags = (props) => {
   return (
@@ -31,8 +32,17 @@ const BlogTags = (props) => {
 };
 
 const ListCard = ({ data }) => {
+  const [onOpen , setOnOpen] = useState(false)
+  const handleClick = ()=>{
+    setOnOpen(true)
+  }
+  const toClose = (value)=>{
+    setOnOpen(value)
+  }
+
   return (
-    <Container w="100%" p="12" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px">
+    <>
+    <Container w="100%" p="12" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" onClick={handleClick}>
       <Wrap spacing="30px" marginTop="5">
           <Box w="100%">
             <Box borderRadius="lg" overflow="hidden">
@@ -68,6 +78,8 @@ const ListCard = ({ data }) => {
           </Box>
       </Wrap>
     </Container>
+    <ModalForList onOpen={onOpen} toClose={toClose} dataForModal={data}/>
+    </>
   );
 };
 

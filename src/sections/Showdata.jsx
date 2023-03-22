@@ -13,6 +13,8 @@ const ShowData = ({asset}) => {
       
     )
   }  
+
+
   return (
     <>
     <SimpleGrid columns={[1, 2, 3]} gap="40px" p={"20px"} >
