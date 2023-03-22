@@ -1,8 +1,9 @@
 import { Box, Link, Heading, Flex, Text, Button, Image } from '@chakra-ui/react';
 
-import image from  "../assets/assetImage.jpg"
 
 const Banner = () => {
+
+
   return (
     <Box 
       position="relative"
