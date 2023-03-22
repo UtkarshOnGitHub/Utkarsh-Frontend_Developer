@@ -9,7 +9,7 @@ export const Footer = () => (
     role="contentinfo"
     padding={"10px"}
     marginTop="40px"
-    data-testid="footer-text"
+    data-testid="footer-test"
     borderTop={"2px solid grey"}
   >
     <Stack
