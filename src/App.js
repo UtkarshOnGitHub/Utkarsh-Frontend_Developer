@@ -1,6 +1,7 @@
 import { filter } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Footer } from "./components/Footer";
 import Pagination from "./components/Pagination";
 import { getAllAssetToShow , getAllDataAtOne} from "./redux/action";
 import Banner from "./sections/Banner";
@@ -70,6 +71,7 @@ function App() {
         <Form handlevaluesChange={handlevaluesChange}/>
         <Showdata asset={asset}/>
         <Pagination callHandleValue={callHandleValue} page={page}/>
+        <Footer/>
       </>
   );
 }

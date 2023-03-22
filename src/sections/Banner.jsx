@@ -22,7 +22,7 @@ const Banner = () => {
 
       <Box margin="0 auto" maxW="64rem" py={{ base: '1rem', lg: '8rem' }}>
         <Heading as="h2" fontSize={{ base: '2.25rem', lg: '3rem' }} mb="4" color="#fff">
-          Let's Explore SpaceX With Antrikash.
+          Let's Explore Space With Antrikash.
         </Heading>
         <Flex
           justify="start"

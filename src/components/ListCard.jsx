@@ -42,7 +42,7 @@ const ListCard = ({ data }) => {
 
   return (
     <>
-    <Container w="100%" p="12" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" onClick={handleClick}>
+    <Container w="100%" p="12" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" _hover={{cursor:"pointer"}} onClick={handleClick}>
       <Wrap spacing="30px" marginTop="5">
           <Box w="100%">
             <Box borderRadius="lg" overflow="hidden">
